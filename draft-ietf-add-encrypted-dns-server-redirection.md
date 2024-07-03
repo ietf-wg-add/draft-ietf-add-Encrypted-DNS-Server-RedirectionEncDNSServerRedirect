@@ -3,7 +3,7 @@ title: "Encrypted DNS Server Redirection"
 abbrev: "EDSR"
 category: std
 
-docname: draft-ietf-add-encrypted-dns-server-redirection
+docname: draft-ietf-add-encrypted-dns-server-redirection-00
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 #number: 0
 date:
