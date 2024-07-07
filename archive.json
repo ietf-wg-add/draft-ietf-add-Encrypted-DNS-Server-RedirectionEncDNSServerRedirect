@@ -1,0 +1,54 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-07-07T01:06:23.106134+00:00",
+  "repo": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
+  "labels": [
+    {
+      "name": "design",
+      "description": "",
+      "color": "1d76db"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "editorial",
+      "description": "",
+      "color": "41d366"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "out of scope",
+      "description": "Out of scope of the WG Charter",
+      "color": "e99695"
+    },
+    {
+      "name": "parked",
+      "description": "Recorded but not being worked on",
+      "color": "f9d0c4"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    }
+  ],
+  "issues": [],
+  "pulls": []
+}
