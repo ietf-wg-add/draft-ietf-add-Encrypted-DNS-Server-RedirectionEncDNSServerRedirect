@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-07T01:06:23.106134+00:00",
+  "timestamp": "2024-07-09T01:01:58.254189+00:00",
   "repo": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
   "labels": [
     {
@@ -47,8 +47,57 @@
       "name": "question",
       "description": "Further information is requested",
       "color": "d876e3"
+    },
+    {
+      "name": "Minor",
+      "description": "possible improvement, not (yet) controversial",
+      "color": "1D76DB"
+    },
+    {
+      "name": "Major",
+      "description": "Changes to normative requirements, WG consensus needed",
+      "color": "D93F0B"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOMRm-Tc6O1DFQ",
+      "title": "\u00c9ric Vyncke: move last paragraph of Section 2 to appendix",
+      "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/issues/1",
+      "state": "OPEN",
+      "author": "mstojens",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [
+        "mstojens"
+      ],
+      "labels": [
+        "Minor"
+      ],
+      "body": "",
+      "createdAt": "2024-07-08T18:22:42Z",
+      "updatedAt": "2024-07-08T20:34:16Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 2,
+      "id": "I_kwDOMRm-Tc6O1_bW",
+      "title": "Corey Mosher: Consider adding guidance for capabilities checking and compat tables for TLS, specifically caching of valid servers",
+      "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/issues/2",
+      "state": "OPEN",
+      "author": "mstojens",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [
+        "Minor"
+      ],
+      "body": "Per the existing guidance to not use lesser encryption in a redirect chain, a mechanism for tracking which servers are suitable (or not) for redirection will need to be maintained to avoid JIT or per-connection suitable redirect target detection. This at least dictates that a small cache should be maintained. This is likely to be neighbor-only but could potentially be handled by following a proposed redirection chain to the end and storing values (including TTLs). Additionally, a server could potentially choose to short-cut known existing chains based on TTLs of all paths en-route to the terminal server and supply the terminal server to the client directly.\r\n\r\nI think this very much fits into the 'server considerations' discussion and we could slide in a client comment if we feel it necessary.",
+      "createdAt": "2024-07-08T20:34:04Z",
+      "updatedAt": "2024-07-08T20:34:05Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": []
 }
