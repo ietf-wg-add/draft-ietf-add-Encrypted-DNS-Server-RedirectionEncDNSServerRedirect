@@ -76,12 +76,6 @@ configurations even though it routes traffic to hundreds or thousands of resolve
 that are closer to the client, reducing latency and making DNS resolutions more
 applicable to the client.
 
-This document describes only one mode of redirection - Strict Origin Redirection. Previous
-versions of this draft defined an additional mode of redirection that allowed servers to 
-redirect to servers that presented a different domain name than the original server. While
-the scenario's validity has some interest, there is no consensus in the WG for how it can 
-be addressed.
-
 # DNS client behavior
 
 ## Discovering redirections
@@ -405,3 +399,11 @@ This draft has no IANA considerations.
 The authors would like to thank the following individuals for their invaluable feedback
 to this document: Ben Schwartz, Eric Orth, Erik Nygren, Manu Bretelle, Ralph Weber,
 Ted Hardie, Tommy Pauly, Viktor Dukhovni, and Vittorio Bertola.
+
+# Appendix
+
+This document describes only one mode of redirection. Previous
+versions of this draft defined an additional mode of redirection that allowed servers to 
+redirect to servers that presented a different domain name than the original server. While
+the scenario's validity has some interest, there is no consensus in the WG for how it can 
+be addressed in an acceptably secure fashion.
