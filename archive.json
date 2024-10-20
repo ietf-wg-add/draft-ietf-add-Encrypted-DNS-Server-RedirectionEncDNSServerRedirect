@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-17T01:11:01.034388+00:00",
+  "timestamp": "2024-10-20T01:16:55.367681+00:00",
   "repo": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
   "labels": [
     {
@@ -65,7 +65,7 @@
       "id": "I_kwDOMRm-Tc6O1DFQ",
       "title": "\u00c9ric Vyncke: move last paragraph of Section 2 to appendix",
       "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/issues/1",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "mstojens",
       "authorAssociation": "COLLABORATOR",
       "assignees": [
@@ -76,8 +76,8 @@
       ],
       "body": "",
       "createdAt": "2024-07-08T18:22:42Z",
-      "updatedAt": "2024-07-08T20:34:16Z",
-      "closedAt": null,
+      "updatedAt": "2024-10-18T23:04:15Z",
+      "closedAt": "2024-10-18T23:04:15Z",
       "comments": []
     },
     {
@@ -97,7 +97,68 @@
       "updatedAt": "2024-07-08T20:34:05Z",
       "closedAt": null,
       "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOMRm-Tc6a4V-s",
+      "title": "Med: could reuse RESINFO to advertise support for redirection",
+      "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/issues/4",
+      "state": "OPEN",
+      "author": "mstojens",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Quoted from an email Med put to the list: \"Now that the WG finalized RESINFO spec, I think that defining attributes for associated-resolver for redirection purposes is worth to consider as well.\"",
+      "createdAt": "2024-10-18T21:57:23Z",
+      "updatedAt": "2024-10-18T21:57:23Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 5,
+      "id": "I_kwDOMRm-Tc6a4WUv",
+      "title": "Tiru: consider STAR certificates",
+      "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/issues/5",
+      "state": "OPEN",
+      "author": "mstojens",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "From an email Tiru sent to the list: \"Instead of relying on delegated\r\ncredentials, which require changes to the client/server, you may want to\r\nexplore the use of STAR Certificates (see RFC9115).\"",
+      "createdAt": "2024-10-18T21:58:23Z",
+      "updatedAt": "2024-10-18T21:58:23Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 3,
+      "id": "PR_kwDOMRm-Tc5_JbT-",
+      "title": "Moving WG history notes to appendix",
+      "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/pull/3",
+      "state": "MERGED",
+      "author": "mstojens",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Will close #1 ",
+      "createdAt": "2024-10-18T21:42:01Z",
+      "updatedAt": "2024-10-18T23:04:14Z",
+      "baseRepository": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
+      "baseRefName": "main",
+      "baseRefOid": "208975a607a28f48d0eab18b919c111c2620df38",
+      "headRepository": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
+      "headRefName": "mstojens-patch-1",
+      "headRefOid": "4f6737a139c4b34b3addadcbb76360c576c0b9f0",
+      "closedAt": "2024-10-18T23:04:14Z",
+      "mergedAt": "2024-10-18T23:04:14Z",
+      "mergedBy": "mstojens",
+      "mergeCommit": {
+        "oid": "eebd023dd3d8846a9fc8184fef865e84265cbe0a"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
