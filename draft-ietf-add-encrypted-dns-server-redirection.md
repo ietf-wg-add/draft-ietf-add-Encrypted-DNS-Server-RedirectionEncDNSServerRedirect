@@ -259,7 +259,9 @@ Servers SHOULD provide sufficiently long TTLs for clients to avoid the need to
 constantly repeat EDSR queries. Server operators should be mindful of redirection
 chains because unless they collaboratively control the TTLs of one another's
 redirections, redirection chains will end up with greatly reduced effective TTLs
-because the client will always use the lowest.
+because the client will always use the lowest. When they do collaboratively control
+the TTLs of one another's redirections, there is probably a way to do a
+single-hop redirection instead.
 
 ## Including IP addresses in EDSR responses
 
@@ -270,6 +272,23 @@ the recursive resolver SHOULD ensure records conntaining the same IP version as 
 existing connection are returned (if the stub is currently connected over IPv4, one or
 more A records SHOULD be included, and if the stub is currently connected over IPv6,
 one or more AAAA records SHOULD be included).
+
+## Determining suitability of destinations for a given client
+
+Because servers are required to ensure redirections are to servers that at least support
+the same protocols as the current connection, server operators will often need to know
+at run-time which of the potential redirection destinations are appropriate for the client
+beyond whatever business logic requires the redirection in the first place. While out of
+scope for protocol design, it is worth calling out that implementors need to consider
+how they will handle this. A straightforward example would be a cache of the potential
+redirection destinations that map to their capabilities, with consideration for how that
+table is populated and updated (example: TLS 1.3 support is rolled out to server which
+previously only served TLS 1.2). Any such out-of-band lookup would be much better than attempting
+just-in-time checking with the potential destinations of their capabilities, which would
+negatively impact the client experience when done during its redirection.
+
+Note that even if there is only one redirection candidate to choose from,
+the server still needs to know when to not offer the redirection due to compatibility issues.
 
 ## Comparison to Discovery Using Resolver Names
 
