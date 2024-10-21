@@ -274,7 +274,14 @@ the same protocols as the current connection, server operators will often need t
 at run-time which of the potential redirection destinations are appropriate for the client
 beyond whatever business logic requires the redirection in the first place. While out of
 scope for protocol design, it is worth calling out that implementors need to consider
-how they will handle this. Even if there is only one redirection candidate to choose from,
+how they will handle this. A straightforward example would be a cache of the potential
+redirection destinations that map to their capabilities, with consideration for how that
+table is populated and updated (example: TLS 1.3 support is rolled out to server which
+previously only served TLS 1.2). Any such out-of-band lookup would be much better than attempting
+just-in-time checking with the potential destinations of their capabilities, which would
+negatively impact the client experience when done during its redirection.
+
+Note that even if there is only one redirection candidate to choose from,
 the server still needs to know when to not offer the redirection due to compatibility issues.
 
 ## Comparison to Discovery Using Resolver Names
