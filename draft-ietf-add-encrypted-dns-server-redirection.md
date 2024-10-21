@@ -204,8 +204,14 @@ The destination server MAY use Delegated Credentials {{?RFC9345}} if the DNS cli
 advertises its support for Delegated Credentials as described in {{Section 4.1.1 of !RFC9345}}.
 This is valid
 so long as the delegated credential is valid for the same domain name used by the
-referring server. This is an encouraged practice for servers which need to redirect
-clients to servers owned by other entities, as is the case with CDN contracts.
+referring server.
+
+Delegated Credentials are one approach for servers which need to redirect
+clients to servers owned by other entities, as is the case with CDN contracts. Another
+approach is using {{?RFC9115}} to delegate Short-Term Automatically Renewed (STAR) certificates to the
+servers that need to serve a name on behalf of a name's owner. This approach would not require protocol changes for
+EDSR peers communicating with one another, unlike Delegated Credentials. Other trade-offs
+between these approaches are beyond the scope of this document.
 
 ## Ensuring compatibility
 
