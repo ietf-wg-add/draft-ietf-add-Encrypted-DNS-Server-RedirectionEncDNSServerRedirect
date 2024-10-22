@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-20T01:16:55.367681+00:00",
+  "timestamp": "2024-10-22T01:11:57.747003+00:00",
   "repo": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
   "labels": [
     {
@@ -85,7 +85,7 @@
       "id": "I_kwDOMRm-Tc6O1_bW",
       "title": "Corey Mosher: Consider adding guidance for capabilities checking and compat tables for TLS, specifically caching of valid servers",
       "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/issues/2",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "mstojens",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
@@ -94,8 +94,8 @@
       ],
       "body": "Per the existing guidance to not use lesser encryption in a redirect chain, a mechanism for tracking which servers are suitable (or not) for redirection will need to be maintained to avoid JIT or per-connection suitable redirect target detection. This at least dictates that a small cache should be maintained. This is likely to be neighbor-only but could potentially be handled by following a proposed redirection chain to the end and storing values (including TTLs). Additionally, a server could potentially choose to short-cut known existing chains based on TTLs of all paths en-route to the terminal server and supply the terminal server to the client directly.\r\n\r\nI think this very much fits into the 'server considerations' discussion and we could slide in a client comment if we feel it necessary.",
       "createdAt": "2024-07-08T20:34:04Z",
-      "updatedAt": "2024-07-08T20:34:05Z",
-      "closedAt": null,
+      "updatedAt": "2024-10-21T18:39:17Z",
+      "closedAt": "2024-10-21T18:39:17Z",
       "comments": []
     },
     {
@@ -119,15 +119,15 @@
       "id": "I_kwDOMRm-Tc6a4WUv",
       "title": "Tiru: consider STAR certificates",
       "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/issues/5",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "mstojens",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "From an email Tiru sent to the list: \"Instead of relying on delegated\r\ncredentials, which require changes to the client/server, you may want to\r\nexplore the use of STAR Certificates (see RFC9115).\"",
       "createdAt": "2024-10-18T21:58:23Z",
-      "updatedAt": "2024-10-18T21:58:23Z",
-      "closedAt": null,
+      "updatedAt": "2024-10-21T18:38:47Z",
+      "closedAt": "2024-10-21T18:38:47Z",
       "comments": []
     }
   ],
@@ -159,6 +159,111 @@
       },
       "comments": [],
       "reviews": []
+    },
+    {
+      "number": 6,
+      "id": "PR_kwDOMRm-Tc5_WtN5",
+      "title": "Point out existence of STAR certs as alternative to DC",
+      "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/pull/6",
+      "state": "MERGED",
+      "author": "mstojens",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #5 ",
+      "createdAt": "2024-10-21T17:28:37Z",
+      "updatedAt": "2024-10-21T18:38:46Z",
+      "baseRepository": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
+      "baseRefName": "main",
+      "baseRefOid": "eebd023dd3d8846a9fc8184fef865e84265cbe0a",
+      "headRepository": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
+      "headRefName": "mstojens-patch-2",
+      "headRefOid": "8e5478a9c9fc5f39862dbe3de4e81df6e302cafa",
+      "closedAt": "2024-10-21T18:38:46Z",
+      "mergedAt": "2024-10-21T18:38:46Z",
+      "mergedBy": "mstojens",
+      "mergeCommit": {
+        "oid": "a8717517d8a6e7b9a9df17d65593d74481a6a6aa"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOMRm-Tc6OCRUO",
+          "commit": {
+            "abbreviatedOid": "8e5478a"
+          },
+          "author": "cmosher",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-10-21T18:06:07Z",
+          "updatedAt": "2024-10-21T18:06:07Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "id": "PR_kwDOMRm-Tc5_W2d3",
+      "title": "Server implementor considerations",
+      "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/pull/7",
+      "state": "MERGED",
+      "author": "mstojens",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #2 ",
+      "createdAt": "2024-10-21T17:52:00Z",
+      "updatedAt": "2024-10-21T18:39:16Z",
+      "baseRepository": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
+      "baseRefName": "main",
+      "baseRefOid": "eebd023dd3d8846a9fc8184fef865e84265cbe0a",
+      "headRepository": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
+      "headRefName": "mstojens-patch-3",
+      "headRefOid": "6fe201e0c30476585d44a2a5d396007b75714b48",
+      "closedAt": "2024-10-21T18:39:16Z",
+      "mergedAt": "2024-10-21T18:39:16Z",
+      "mergedBy": "mstojens",
+      "mergeCommit": {
+        "oid": "96540c171ca0970ce5db93354ff0953f3b6ec3b1"
+      },
+      "comments": [
+        {
+          "author": "mstojens",
+          "authorAssociation": "COLLABORATOR",
+          "body": "What do you think of the latest, @cmosher ? I added a bit more hoping to capture your intent.",
+          "createdAt": "2024-10-21T18:29:07Z",
+          "updatedAt": "2024-10-21T18:29:07Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOMRm-Tc6OCW_a",
+          "commit": {
+            "abbreviatedOid": "9631b99"
+          },
+          "author": "cmosher",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "This goes back to one of our earlier discussions about the implementation considerations. While out of scope of the draft, as you noted previously, I do agree that some guidance or a reference implementation is desirable here.\r\n\r\nA capabilities-aware cache / management implementation is an obvious solution to extend EDSR without requiring restrictive or specific standards guidance, and a good place to hang server or implementation recommendations that can address these points without bloating the text.",
+          "createdAt": "2024-10-21T18:12:59Z",
+          "updatedAt": "2024-10-21T18:12:59Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOMRm-Tc6OCiC-",
+          "commit": {
+            "abbreviatedOid": "6fe201e"
+          },
+          "author": "cmosher",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "I think that's solid, and succinct.",
+          "createdAt": "2024-10-21T18:32:19Z",
+          "updatedAt": "2024-10-21T18:32:19Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
