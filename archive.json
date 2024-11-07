@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-11-05T01:10:03.970999+00:00",
+  "timestamp": "2024-11-07T01:10:17.549255+00:00",
   "repo": "ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect",
   "labels": [
     {
@@ -128,6 +128,22 @@
       "createdAt": "2024-10-18T21:58:23Z",
       "updatedAt": "2024-10-21T18:38:47Z",
       "closedAt": "2024-10-21T18:38:47Z",
+      "comments": []
+    },
+    {
+      "number": 8,
+      "id": "I_kwDOMRm-Tc6dGoSB",
+      "title": "Adding example record flows",
+      "url": "https://github.com/ietf-wg-add/draft-ietf-add-Encrypted-DNS-Server-RedirectionEncDNSServerRedirect/issues/8",
+      "state": "OPEN",
+      "author": "tfpauly",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "It would be nice to show some example records on how the redirection looks in practice",
+      "createdAt": "2024-11-05T15:21:14Z",
+      "updatedAt": "2024-11-05T15:21:14Z",
+      "closedAt": null,
       "comments": []
     }
   ],
