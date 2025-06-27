@@ -292,7 +292,7 @@ the server still needs to know when to not offer the redirection due to compatib
 
 ## Comparison to Discovery Using Resolver Names
 
-Discovery Using Resolver Names as defined in {{Section 5 of !RFC9345}} describes
+Discovery Using Resolver Names as defined in {{Section 5 of !RFC9462}} describes
 discovery of the encrypted DNS configuration for
 a server using its domain name. The technical mechanism described there and EDSR are
 the same in the context of on-wire behavior; they differ by how clients and servers
