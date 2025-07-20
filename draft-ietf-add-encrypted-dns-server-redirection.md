@@ -180,7 +180,7 @@ resolvers. This ensures that a resolver which redirects clients based on their
 source network can behave accordingly.
 
 Note that this is unrelated to what resolvers a client is originally configured with. 
-For example, a client which is configured to always used the resolvers advertised by 
+For example, a client which is configured to always use the resolvers advertised by 
 DHCP will likely start with different original resolvers when changing networks. How a 
 client is configured with DNS resolvers is out of scope for this document. EDSR only 
 provides a mechanism for clients to discover redirections from resolvers they were 
