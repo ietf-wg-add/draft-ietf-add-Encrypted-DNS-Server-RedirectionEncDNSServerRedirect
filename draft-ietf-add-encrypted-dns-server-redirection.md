@@ -423,7 +423,7 @@ This draft has no IANA considerations.
 
 The authors would like to thank the following individuals for their invaluable feedback
 to this document: Andrew Campling, Ben Schwartz, Eric Orth, Erik Nygren, Manu Bretelle,
-Ralph Weber, Ted Hardie, Tommy Pauly, Viktor Dukhovni, and Vittorio Bertola.
+Ralf Weber, Ted Hardie, Tommy Pauly, Viktor Dukhovni, and Vittorio Bertola.
 
 # Appendix
 
