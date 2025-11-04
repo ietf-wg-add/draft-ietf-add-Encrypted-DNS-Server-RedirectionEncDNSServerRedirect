@@ -3,7 +3,7 @@ title: "Encrypted DNS Server Redirection"
 abbrev: "EDSR"
 category: std
 
-docname: draft-ietf-add-encrypted-dns-server-redirection-00
+docname: draft-ietf-add-encrypted-dns-server-redirection-03
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 #number: 0
 date:
@@ -422,8 +422,8 @@ This draft has no IANA considerations.
 # Acknowledgments
 
 The authors would like to thank the following individuals for their invaluable feedback
-to this document: Ben Schwartz, Eric Orth, Erik Nygren, Manu Bretelle, Ralph Weber,
-Ted Hardie, Tommy Pauly, Viktor Dukhovni, and Vittorio Bertola.
+to this document: Andrew Campling, Ben Schwartz, Eric Orth, Erik Nygren, Manu Bretelle,
+Ralph Weber, Ted Hardie, Tommy Pauly, Viktor Dukhovni, and Vittorio Bertola.
 
 # Appendix
 
