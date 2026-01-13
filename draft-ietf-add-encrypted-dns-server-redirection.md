@@ -268,7 +268,7 @@ single-hop redirection instead.
 If a recursive resolver does not include additional A/AAAA records per
 {{Section 5 of !RFC9460}}, stub resolvers might end up failing
 the redirection if the redirection destination name cannot be resolved. Additionally,
-the recursive resolver SHOULD ensure records conntaining the same IP version as the
+the recursive resolver SHOULD ensure records containing the same IP version as the
 existing connection are returned (if the stub is currently connected over IPv4, one or
 more A records SHOULD be included, and if the stub is currently connected over IPv6,
 one or more AAAA records SHOULD be included).
